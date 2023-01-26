@@ -12,16 +12,14 @@ class SlmExamDesignApplicationTests {
 	@Test
 	void calcSquareArea() {
 
-	// Given
-	CalcController controller = new CalcController();
+		// Given
+		CalcController controller = new CalcController();
 
-	// When
-	double result = Double.parseDouble(String.valueOf(controller.calcSquareArea(3)));
+		// When
+		double result = Double.parseDouble(String.valueOf(controller.calcSquareArea(3)));
 
-	// Then
-	assertEquals(result, 25);
+		// Then
+		assertEquals(result, 9);
 
 	}
 }
-
-
