@@ -13,7 +13,7 @@ public class CalcController {
     }
 
     @GetMapping("/square/{num}")
-    double calcSquareArea(@PathVariable double num) {
+    public double calcSquareArea(@PathVariable double num) {
         return num * num;
     }
 
