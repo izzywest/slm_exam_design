@@ -33,7 +33,6 @@ PDF
 ## Credits & Related
 
 - [start.spring.io](https://github.com/spring-io/start.spring.io)
-- [symflower](https://github.com/symflower)
 
 ## License
 
