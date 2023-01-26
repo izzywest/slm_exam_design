@@ -22,4 +22,19 @@ class SlmExamDesignApplicationTests {
 		assertEquals(result, 9);
 
 	}
+
+	@Test
+	void calcCircleArea() {
+
+		// Given
+		CalcController controller = new CalcController();
+
+		// When
+		String result = String.valueOf(Double.parseDouble(String.valueOf(controller.calcCircleArea(3))));
+
+		// Then
+		assertEquals(result, "28.27");
+
+	}
+
 }

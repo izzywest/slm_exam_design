@@ -8,13 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalcController {
 
     @GetMapping("/circle/{num}")
-    double calcCircleArea(@PathVariable double num) {
-        return (num * num) * 3.14159265359;
+    public String calcCircleArea(@PathVariable double num) {
+        double result = (num * num) * 3.14159265359;
+        return String.format("%.2f",result);
     }
 
     @GetMapping("/square/{num}")
-    public double calcSquareArea(@PathVariable double num) {
-        return num * num;
+    public String calcSquareArea(@PathVariable double num) {
+        double result = num * num;
+        return String.format("%.2f",result);
     }
 
 }
+
